@@ -49,8 +49,8 @@ if not SALESFORCE_CLIENT_ID or not SALESFORCE_CLIENT_SECRET or not SALESFORCE_AU
     raise ValueError("ERROR: Salesforce credentials are missing from .env file!")
 
 
-PDF_PATH = "C:/Users/lenovo/Downloads/Document/Boat/src/PropertyDetail.pdf"
-# PDF_PATH = "/home/ubuntu/PropertyDetail.pdf"
+# PDF_PATH = "C:/Users/lenovo/Downloads/Document/Boat/src/PropertyDetail.pdf"
+PDF_PATH = "/home/ubuntu/PropertyDetail.pdf"
 
 vector_store = None
 chat_history = []
