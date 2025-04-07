@@ -37,9 +37,9 @@ load_dotenv()
 env_path = Path('/home/ubuntu/chatbot2') / '.env'
 load_dotenv(dotenv_path=env_path)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-SALESFORCE_CLIENT_SECRET = os.getenv("SALESFORCE_CLIENT_SECRET")
-SALESFORCE_AUTH_URL = os.getenv("SALESFORCE_AUTH_URL")
-SALESFORCE_CLIENT_ID = os.getenv("SALESFORCE_CLIENT_ID")
+SALESFORCE_CLIENT_SECRET = "67027AA5E4793A9FDCE0B13FA11E9FA2A41CA7C7270079D654B56EAC195DA91F" #os.getenv("SALESFORCE_CLIENT_SECRET")
+SALESFORCE_AUTH_URL = "https://iqb4-dev-ed.develop.my.salesforce.com/services/oauth2/token" #os.getenv("SALESFORCE_AUTH_URL")
+SALESFORCE_CLIENT_ID = "3MVG9pRzvMkjMb6kXIMaUGyXNzwSMewmrdMKrZmsdv8ZJ1dRg9cockiUAcWLre745UP.WoR.vWMe0Gh8Q4x35"  #os.getenv("SALESFORCE_CLIENT_ID")
 
 if not OPENAI_API_KEY:
     raise ValueError("ERROR: OPENAI_API_KEY is missing from .env file!")
