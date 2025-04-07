@@ -29,9 +29,9 @@ app.add_middleware(
 
 # app.mount("/static", StaticFiles(directory="static"), name="static")
 
-@app.get("/", response_class=FileResponse)
-async def serve_index():
-    return "static/index.html"
+# @app.get("/", response_class=FileResponse)
+# async def serve_index():
+#     return "static/index.html"
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
